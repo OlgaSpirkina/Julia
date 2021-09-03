@@ -33,6 +33,7 @@
   .section_paintings{
     width: 90%;
     justify-content: flex-start;
+    padding-top: 0;
   }
   .paint_container{
     height: 11rem;
