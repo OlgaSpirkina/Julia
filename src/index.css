@@ -2,9 +2,14 @@
   font-family: 'Chivo', sans-serif;
   src: local('Noto Sans'), url(./fonts/Chivo-Regular.ttf) format('truetype');
 }
+:root{
+  --primaryOrange: rgb(249, 86, 2);
+  --mainGray: rgb(112, 128, 144);
+  --mainfont: 'Chivo', sans-serif;
+}
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Chivo', sans-serif;
+  font-family: var(--mainfont);
 }

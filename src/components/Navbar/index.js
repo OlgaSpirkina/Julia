@@ -1,9 +1,30 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import SocialMedia from '../SocialMedia'
 import { FcMenu } from 'react-icons/fc'
 import { VscClose } from 'react-icons/vsc'
 import styles from './Navbar.module.css'
+
+/* an array of objects to create the navlinks */
+const navArr = [
+  {
+    "link": "/",
+    "title": "Home"
+  },
+  {
+    "link": "/gallery",
+    "title": "Gallery"
+  },
+  {
+    "link": "/about",
+    "title": "About"
+  },
+  {
+    "link": "/contact",
+    "title": "Contact"
+  }
+];
 
 const Navbar = ({ title }) => {
   const [toggle, setToggle] = useState(false);
@@ -13,13 +34,13 @@ const Navbar = ({ title }) => {
   return(
     <aside className={styles.aside_in_nav}>
       <nav className={styles.navbar}>
-        <h1><Link to="/">{title}</Link></h1>
-        <div
-          className={styles.menu_icon}
-          onClick={toggleMenu}
-        >
-          {!toggle ? <FcMenu /> : <VscClose /> }
-        </div>
+        <h1><NavLink to="/">{title}</NavLink></h1>
+          <div
+            className={styles.menu_icon}
+            onClick={toggleMenu}
+          >
+            {!toggle ? <FcMenu /> : <VscClose />}
+          </div>
         <div
           className=
           {toggle ? `${styles.active} ${styles.navbar_links}` : `${styles.navbar_links}`}
@@ -29,11 +50,20 @@ const Navbar = ({ title }) => {
             className=
             {toggle ? `${styles.active} ${styles.navbar_links}` : `${styles.navbar_links}`}
           >
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/gallery">Gallery</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+          {navArr.map((elem, index)=>{
+            return(
+              <li key={index}>
+                <NavLink
+                  activeStyle={{ color: '#f95602', textDecoration: 'underline' }}
+                  exact to={elem.link}
+                >
+                  {elem.title}
+                </NavLink>
+              </li>
+            )
+          })}
           </ul>
+          <SocialMedia />
         </div>
       </nav>
     </aside>

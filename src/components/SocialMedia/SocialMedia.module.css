@@ -1,0 +1,19 @@
+.logo_parent{
+  display: flex;
+  margin-top: 2rem;
+}
+.logovk{
+  margin-left: .5rem;
+  cursor: pointer;
+  color: var(--primaryOrange);
+  font-size: .5rem;
+}
+.logovk:hover{
+  transform: scale(1.2);
+  opacity: .9;
+}
+@media only screen and (max-width : 649px) {
+  .logo_parent{
+    margin-top: 10rem;
+  }
+}
