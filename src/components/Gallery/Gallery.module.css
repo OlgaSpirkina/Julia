@@ -1,0 +1,38 @@
+.section_gallery{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section{
+  width: 75%;
+  margin: auto;
+  margin-top: 5rem;
+  padding-top: 5rem;
+}
+.gallery_container{
+  width: 90%;
+  height: 10rem;
+  margin: 2rem 0;
+  margin-bottom: 5rem;
+}
+.gallery_container:first-of-type{
+  background-image: url('https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/paint2.jpg');
+}
+.gallery_container:nth-of-type(2){
+  background-image: url('https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/paint12.jpg');
+}
+.gallery_container:nth-of-type(3){
+  background-image: url('https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/paint7.jpg');
+}
+.for_paintings{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+@media only screen and (max-width : 649px) {
+  .section{
+    padding-top: 0;
+  }
+}

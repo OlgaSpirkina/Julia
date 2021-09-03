@@ -1,11 +1,7 @@
 .section_paintings{
-  width: 75%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: auto;
-  margin-top: 5rem;
-  padding-top: 5rem;
 }
 .paint_container{
   height: 17rem;
@@ -29,10 +25,18 @@
 .horizontal{
   width: 20rem;
 }
+.section{
+  width: 75%;
+  margin: auto;
+  margin-top: 5rem;
+  padding-top: 5rem;
+}
 @media only screen and (max-width : 649px) {
   .section_paintings{
     width: 90%;
     justify-content: flex-start;
+  }
+  .section{
     padding-top: 0;
   }
   .paint_container{

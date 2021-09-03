@@ -2,10 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Painting from './Painting'
 import styles from './Paintings.module.css'
+require('../../index.css')
 
 const Paintings = ({ paintings }) => {
   return(
-    <section className={styles.section_paintings}>
+    <section className={`${styles.section_paintings} ${styles.section}`}>
       {paintings.map((paint, index)=>{
         return(
           <Painting key={index} paint={paint} />
