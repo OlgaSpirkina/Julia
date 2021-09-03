@@ -35,12 +35,12 @@ const Navbar = ({ title }) => {
     <aside className={styles.aside_in_nav}>
       <nav className={styles.navbar}>
         <h1><NavLink to="/">{title}</NavLink></h1>
-          <div
-            className={styles.menu_icon}
-            onClick={toggleMenu}
-          >
-            {!toggle ? <FcMenu /> : <VscClose />}
-          </div>
+        <div
+          className={styles.menu_icon}
+          onClick={toggleMenu}
+        >
+          {!toggle ? <FcMenu /> : <VscClose />}
+        </div>
         <div
           className=
           {toggle ? `${styles.active} ${styles.navbar_links}` : `${styles.navbar_links}`}

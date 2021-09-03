@@ -1,6 +1,8 @@
 .logo_parent{
+  position: relative;
   display: flex;
-  margin-top: 2rem;
+  margin: 2rem 0;
+  z-index: 2;
 }
 .logovk{
   margin-left: .5rem;
@@ -14,6 +16,6 @@
 }
 @media only screen and (max-width : 649px) {
   .logo_parent{
-    margin-top: 10rem;
+    margin-top: 15rem;
   }
 }

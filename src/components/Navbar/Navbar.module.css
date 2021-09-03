@@ -1,7 +1,7 @@
 .aside_in_nav{
   position: relative;
   float: left;
-  width: 20%;
+  width: 15%;
   min-height: 500px;
   margin-top: 2rem;
   margin-left: 2rem;
@@ -25,7 +25,7 @@
   list-style: none;
   margin: .5rem 0;
   margin-left: .5rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 .navbar a{
   text-decoration: none;
@@ -45,12 +45,19 @@
     margin: 0;
     position: fixed;
     width: 100%;
-    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .navbar{
+    width: 100%;
+    height: 5rem;
+    background-color: rgba(255, 255, 255, .8);
   }
   .navbar h1{
     width: 100%;
     line-height: normal;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .menu_icon{
     display: block;
@@ -60,6 +67,9 @@
     transition: opacity 3s, transform 3s;
 		transform: rotate(180deg) scale(.5);
 		opacity: 0;
+  }
+  .navbar div:nth-of-type(2){
+    height: 100%;
   }
   .navbar_links{
     height: inherit;
@@ -73,6 +83,10 @@
     transition: 1.5s ease-in-out;
   }
   .navbar_links.active{
-    width: 50%;
+    width: 70%;
+  }
+  .navbar ul{
+    padding-top: 2rem;
+    margin-bottom: 2rem;
   }
 }

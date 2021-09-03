@@ -1,0 +1,46 @@
+.section_paintings{
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 5rem;
+  padding-top: 5rem;
+}
+.paint_container{
+  height: 17rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem;
+  border: 1px solid var(--mainGray);
+}
+.paint_container img{
+  /* border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem; */
+}
+.paint_container p{
+  margin: 0;
+  padding: 0;
+}
+.vertical{
+  width: 10rem;
+}
+.horizontal{
+  width: 20rem;
+}
+@media only screen and (max-width : 649px) {
+  .section_paintings{
+    width: 90%;
+    justify-content: flex-start;
+  }
+  .paint_container{
+    height: 11rem;
+  }
+  .vertical{
+    width: 7rem;
+  }
+  .horizontal{
+    width: 15rem;
+  }
+}
