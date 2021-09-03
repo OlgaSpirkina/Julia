@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Julia/static/css/main.17faef5c.chunk.css",
+    "main.js": "/Julia/static/js/main.cd91d71d.chunk.js",
+    "main.js.map": "/Julia/static/js/main.cd91d71d.chunk.js.map",
+    "runtime-main.js": "/Julia/static/js/runtime-main.c189e17b.js",
+    "runtime-main.js.map": "/Julia/static/js/runtime-main.c189e17b.js.map",
+    "static/js/2.1236d5a5.chunk.js": "/Julia/static/js/2.1236d5a5.chunk.js",
+    "static/js/2.1236d5a5.chunk.js.map": "/Julia/static/js/2.1236d5a5.chunk.js.map",
+    "static/js/3.2cb7c3a1.chunk.js": "/Julia/static/js/3.2cb7c3a1.chunk.js",
+    "static/js/3.2cb7c3a1.chunk.js.map": "/Julia/static/js/3.2cb7c3a1.chunk.js.map",
+    "index.html": "/Julia/index.html",
+    "static/css/main.17faef5c.chunk.css.map": "/Julia/static/css/main.17faef5c.chunk.css.map",
+    "static/js/2.1236d5a5.chunk.js.LICENSE.txt": "/Julia/static/js/2.1236d5a5.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Julia/static/media/Chivo-Regular.741cf223.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c189e17b.js",
+    "static/js/2.1236d5a5.chunk.js",
+    "static/css/main.17faef5c.chunk.css",
+    "static/js/main.cd91d71d.chunk.js"
+  ]
+}
