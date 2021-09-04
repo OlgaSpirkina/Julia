@@ -42,16 +42,20 @@
 .turn_around{
   transform: rotate(180deg);
 }
-@media only screen and (max-width : 649px) {
+@media only screen and (max-width : 1000px) {
   .section{
     padding-top: 0;
     width: 100%;
   }
   .detail_text_img{
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .detail_text_img div{
+    width: 90%;
   }
   .details_container img{
     width: 90%;
