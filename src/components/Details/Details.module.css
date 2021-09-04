@@ -1,11 +1,30 @@
-.details_container{
+.section{
   width: 75%;
   margin: auto;
-  border: 1px solid red;
+  margin-top: 5rem;
+  padding-top: 5rem;
+}
+.details_container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.details_container img{
+  width: 40%;
+  margin: 1rem 0;
 }
 .paragraph_hidden{
   width: 0;
 }
 .active{
   width: 15rem;
+}
+@media only screen and (max-width : 649px) {
+  .section{
+    padding-top: 0;
+    width: 100%;
+  }
+  .details_container img{
+    width: 90%;
+  }
 }

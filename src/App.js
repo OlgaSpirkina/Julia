@@ -2,8 +2,8 @@ import React, { Fragment, useState, useEffect } from 'react'
 import { HashRouter, Switch, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Paintings from './components/Paintings'
-import Gallery from './components/Gallery'
 import Details from './components/Details'
+import Gallery from './components/Gallery'
 import './App.css';
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
     }
     getPaintings();
   }, [])
+
   return (
     <HashRouter>
       <Fragment>
@@ -24,7 +25,6 @@ function App() {
           <Route exact path="/" render={props =>(
             <Paintings paintings={paintings} />
           )}/>
-
           <Route exact path='/gallery'
             render={props => (
               <Gallery
@@ -32,7 +32,7 @@ function App() {
               />
             )}
           />
-          <Route exact path='/details:category' render={props =>(
+          <Route exact path='/details/:category' render={props => (
             <Details
               {...props}
               paintings={paintings}
@@ -41,15 +41,26 @@ function App() {
         </Switch>
       </Fragment>
     </HashRouter>
-  );
+
+  )
 }
 
 export default App;
+
 /*
-<Route exact path='/details:category' render={props =>(
-  <Details
-    {...props}
-    paintings={paintings}
-  />
-)} />
+Calling fake API as well as useEffect hook were removed because of the category buttons issue: difficulty to rerender the quotes when using category buttons
+Using data.js to get the quotes, images, etc.
+*/
+/*
+const [quotes, setQuotes] = useState([]);
+// call an json-server to display all the quotes
+  useEffect(() => {
+    async function searchQuotes(){
+      const res = await fetch('https://my-json-server.typicode.com/OlgaSpirkina/mindfulness/quotes');
+      const data = await res.json();
+      setQuotes(data);
+    }
+
+    searchQuotes();
+  }, [])
 */

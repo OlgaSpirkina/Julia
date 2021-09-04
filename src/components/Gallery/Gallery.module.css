@@ -14,7 +14,10 @@
   width: 90%;
   height: 10rem;
   margin: 2rem 0;
-  margin-bottom: 5rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #fff;
+  text-decoration: none;
 }
 .gallery_container:first-of-type{
   background-image: url('https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/paint2.jpg');

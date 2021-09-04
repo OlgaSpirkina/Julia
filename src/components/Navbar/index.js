@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
-import SocialMedia from '../SocialMedia'
 import { FcMenu } from 'react-icons/fc'
 import { VscClose } from 'react-icons/vsc'
+import SocialMedia from '../SocialMedia'
 import styles from './Navbar.module.css'
 
 /* an array of objects to create the navlinks */

@@ -12,9 +12,10 @@ const Details = ({ paintings }) =>{
     if(paintings[i].category == category){
       arr.push(paintings[i].image);
     }
+
   }
   return(
-    <section className={styles.details_container}>
+    <section className={`${styles.section} ${styles.details_container}`}>
       {arr.map((img, i) => {
         return(
           <img key={i} src={img} alt="un tableau" />

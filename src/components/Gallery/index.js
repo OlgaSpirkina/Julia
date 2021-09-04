@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import Painting from '../Paintings/Painting'
 import { Link } from 'react-router-dom'
 import styles from './Gallery.module.css'
 
@@ -13,13 +12,14 @@ const Gallery = ({ paintings }) => {
       <section className={`${styles.section_gallery} ${styles.section}`}>
         {allCategories.map((category, i) => {
           return(
-            <div
+            <Link
+              to={`/details/${category}`}
               key={i}
               onClick={() => setCategoryName(`${category}`)}
               className={styles.gallery_container}
             >
-              <Link to={`/details/${category}`}>{category}</Link>
-            </div>
+              {category}
+            </Link>
           )
         })}
       </section>

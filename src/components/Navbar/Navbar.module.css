@@ -44,6 +44,7 @@
 @media only screen and (max-width : 649px) {
   .aside_in_nav{
     margin: 0;
+    min-height: 5rem;
     position: fixed;
     width: 100%;
     top: 0;
@@ -76,7 +77,7 @@
     height: inherit;
     width: 0;
     position: fixed;
-    z-index: 1;
+    /* z-index: 1; */
     top: 1;
     left: 0;
     background-color: #fff;
@@ -84,7 +85,8 @@
     transition: 1.5s ease-in-out;
   }
   .navbar_links.active{
-    width: 70%;
+    width: 50%;
+      z-index: 2;
   }
   .navbar ul{
     padding-top: 2rem;
