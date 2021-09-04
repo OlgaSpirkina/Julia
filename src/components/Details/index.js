@@ -6,22 +6,39 @@ import styles from './Details.module.css'
 
 const Details = ({ paintings }) =>{
   let { category } = useParams();
+  const [toggle, setToggle] = useState(false);
+  const displayDetails = () => {
+    setToggle(!toggle);
+  }
 
-
-  let x = [];
+  let filteredByCategory = [];
   for(let i=0; i<paintings.length; i++){
     if(paintings[i].category == category){
-      // Start Filter
-      x = paintings.filter((a)=>{if(a.category==category){return a}});
-      console.log(x)
+      filteredByCategory = paintings.filter((a)=>{if(a.category==category){return a}});
     }
 
   }
   return(
     <section className={`${styles.section} ${styles.details_container}`}>
-      {x.map((elem, i) => {
+      {filteredByCategory.map((elem, i) => {
         return(
-          <img key={i} src={elem.image} alt={elem.title} />
+          <div className={styles.detail_text_img}>
+            <img key={i} src={elem.image} alt={elem.title} />
+            <div>
+              <p
+                onClick={displayDetails}
+              >
+                { !toggle ? 'Read about' : 'Close'}
+                <FiChevronDown className={ toggle ? `${styles.turn_around} ${styles.icon_in_details}` : `${styles.icon_in_details}`}/>
+              </p>
+              <p
+                className=
+                { toggle ? `${styles.active}` : `${styles.paragraph_hidden}`}
+              >
+                {elem.text}
+              </p>
+            </div>
+          </div>
         )
       })}
     </section>

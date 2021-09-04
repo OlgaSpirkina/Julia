@@ -86,7 +86,7 @@
   }
   .navbar_links.active{
     width: 50%;
-      z-index: 2;
+    z-index: 2;
   }
   .navbar ul{
     padding-top: 2rem;
