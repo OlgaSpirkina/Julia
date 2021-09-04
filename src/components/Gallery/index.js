@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Painting from '../Paintings/Painting'
+import { Link } from 'react-router-dom'
 import styles from './Gallery.module.css'
 
 const Gallery = ({ paintings }) => {
@@ -17,21 +18,10 @@ const Gallery = ({ paintings }) => {
               onClick={() => setCategoryName(`${category}`)}
               className={styles.gallery_container}
             >
-              {category}
+              <Link to={`/details/${category}`}>{category}</Link>
             </div>
           )
         })}
-        <div className={styles.for_paintings}>
-        {paintings.map((paint, index)=>{
-          return(
-          categoryName === paint.category
-          ?
-            <Painting key={index} paint={paint} />
-          :
-            null
-          )
-        })}
-        </div>
       </section>
       </>
 
@@ -44,3 +34,20 @@ Gallery.propTypes = {
 }
 
 export default Gallery
+
+/*
+const allCategories = [ ...new Set(paintings.map(elem => elem.category))];
+const [categoryName, setCategoryName] = useState('');
+*/
+//   onClick={() => setCategoryName(`${category}`)}
+/*   <div className={styles.for_paintings}>
+  {paintings.map((paint, index)=>{
+    return(
+    categoryName === paint.category
+    ?
+      <Painting key={index} paint={paint} />
+    :
+      null
+    )
+  })}
+  </div> */
