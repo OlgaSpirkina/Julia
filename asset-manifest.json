@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Julia/static/css/main.90c12a17.chunk.css",
-    "main.js": "/Julia/static/js/main.f9f43da2.chunk.js",
-    "main.js.map": "/Julia/static/js/main.f9f43da2.chunk.js.map",
+    "main.js": "/Julia/static/js/main.a91b514d.chunk.js",
+    "main.js.map": "/Julia/static/js/main.a91b514d.chunk.js.map",
     "runtime-main.js": "/Julia/static/js/runtime-main.7ad44d32.js",
     "runtime-main.js.map": "/Julia/static/js/runtime-main.7ad44d32.js.map",
     "static/js/2.1b28d50e.chunk.js": "/Julia/static/js/2.1b28d50e.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.7ad44d32.js",
     "static/js/2.1b28d50e.chunk.js",
     "static/css/main.90c12a17.chunk.css",
-    "static/js/main.f9f43da2.chunk.js"
+    "static/js/main.a91b514d.chunk.js"
   ]
 }
