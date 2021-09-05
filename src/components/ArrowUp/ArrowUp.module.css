@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  cursor: pointer;
 }
 .arrowUp{
   font-size: 1.5rem;

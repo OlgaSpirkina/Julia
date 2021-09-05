@@ -1,12 +1,20 @@
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { Fragment, useEffect, useState, useRef } from 'react'
 import PropTypes from 'prop-types'
 import Painting from './Painting'
 import ArrowUp from '../ArrowUp'
 import styles from './Paintings.module.css'
 require('../../index.css')
 
+// scroll to the top of the page
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+
 const Paintings = ({ paintings }) => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+// Start scroll to top
+  const sectionRef = useRef(null);
+  const executeScroll = () => scrollToRef(sectionRef);
+// Finish scroll to top
+
 /* detect if small screen */
   useEffect(() => {
     const changeWidth = () => {
@@ -20,14 +28,14 @@ const Paintings = ({ paintings }) => {
   },[])
   return(
     <Fragment>
-      <section id="bout" className={`${styles.section_paintings} ${styles.section}`}>
+      <section ref={sectionRef} id="bout" className={`${styles.section_paintings} ${styles.section}`}>
         {paintings.map((paint, index)=>{
           return(
             <Painting key={index} paint={paint} />
           )
         })}
         {screenWidth <= 649 && (
-          <ArrowUp href="#" />
+          <ArrowUp onClick={executeScroll}/>
         )}
       </section>
       <div>
@@ -42,3 +50,8 @@ Paintings.propTypes = {
 }
 
 export default Paintings
+/*
+{screenWidth <= 649 && (
+  <ArrowUp href="#" />
+)}
+*/

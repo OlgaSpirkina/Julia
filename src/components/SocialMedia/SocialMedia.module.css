@@ -11,9 +11,9 @@
   color: var(--primaryOrange);
 }
 .fb{
-  font-size: 1.85rem;
-  margin-top: .1rem;
-  border-radius: .85rem;
+  font-size: 1.6rem;
+  margin-top: .25rem;
+  border-radius: .2rem;
 }
 .logovk:hover,
 .fb:hover{
