@@ -1,0 +1,12 @@
+.arrowUp_container{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.arrowUp{
+  font-size: 1.5rem;
+  padding: .7rem;
+  background-color: var(--primaryOrange);
+  color: #fff;
+  border-radius: .5rem;
+}

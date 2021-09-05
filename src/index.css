@@ -7,6 +7,9 @@
   --mainGray: rgb(112, 128, 144);
   --mainfont: 'Chivo', sans-serif;
 }
+*{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;

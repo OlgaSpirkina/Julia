@@ -24,7 +24,6 @@
   font-size: 1.2rem;
   line-height: 2;
 }
-
 @media only screen and (max-width : 649px) {
   .section_about{
     width: 90%;
