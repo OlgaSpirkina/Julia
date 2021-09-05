@@ -8,13 +8,13 @@
   margin-left: .5rem;
   cursor: pointer;
   color: var(--primaryOrange);
-  font-size: .5rem;
+  /* font-size: .5rem; */
 }
 .logovk:hover{
   transform: scale(1.2);
   opacity: .9;
 }
-@media only screen and (max-width : 649px) {
+@media only screen and (max-width : 1000px) {
   .logo_parent{
     margin-top: 15rem;
   }
