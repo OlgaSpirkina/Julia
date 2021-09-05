@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 import styles from './Gallery.module.css'
 
 const Gallery = ({ paintings }) => {
-    const allCategories = [ ...new Set(paintings.map(elem => elem.category))];
-    const [categoryName, setCategoryName] = useState('');
+  const allCategories = [ ...new Set(paintings.map(elem => elem.category))];
+  const [categoryName, setCategoryName] = useState('');
 
     return(
       <>

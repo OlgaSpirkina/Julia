@@ -1,6 +1,6 @@
 .arrowUp_container{
-  width: 100%;
-  margin-top: 1rem;
+  width: 95%;
+  margin: 1rem 0;
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
