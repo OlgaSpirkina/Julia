@@ -2,93 +2,88 @@
   "paintings": [
     {
       "category": "paysage",
-      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/paint1.jpg",
-      "title": "paint1",
+      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/redPeony.jpg",
+      "title": "red peony",
       "text": "I'm baby 8-bit raclette migas, normcore slow-carb gentrify lo-fi waistcoat single-origin coffee tumeric poutine coloring book"
     },
     {
       "category": "portrait",
-      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/paint2.jpg",
-      "title": "paint2",
+      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/chamomile.jpg",
+      "title": "chamomile",
       "text": "Tofu pok pok plaid hexagon, snackwave forage poke tacos. Bushwick roof party kombucha everyday carry, retro deep v YOLO hoodie"
     },
     {
       "category": "paysage",
-      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/paint3.jpg",
-      "title": "paint3",
+      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/pumpkins.jpg",
+      "title": "pumpkins",
+      "text": "I'm baby 8-bit raclette migas, normcore slow-carb gentrify lo-fi waistcoat single-origin coffee tumeric poutine coloring book"
+    },
+    {
+      "category": "paysage",
+      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/vpaintArc.jpg",
+      "title": "vpaint Arc",
       "text": "Tousled meditation godard williamsburg, austin umami forage try-hard hella bicycle rights tattooed chicharrones irony."
     },
     {
       "category": "abstraction",
-      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/vpaint4.jpg",
-      "title": "vpaint4",
+      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/vpaintHorse.jpg",
+      "title": "vpaint Horse",
       "text": " Four loko cray tote bag mixtape, twee tousled aesthetic viral cronut. Mumblecore affogato twee trust fund whatever."
     },
     {
       "category": "portrait",
-      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/vpaint5.jpg",
-      "title": "vpaint5",
+      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/courtyard.jpg",
+      "title": "courtyard",
       "text": "Four loko cray tote bag mixtape, twee tousled aesthetic viral cronut. Mumblecore affogato twee trust fund whatever."
     },
     {
       "category": "portrait",
-      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/paint6.jpg",
-      "title": "paint6",
+      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/grapes.jpg",
+      "title": "grapes",
       "text": "Four loko cray tote bag mixtape, twee tousled aesthetic viral cronut. Mumblecore affogato twee trust fund whatever."
     },
     {
+      "category": "portrait",
+      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/sea.jpg",
+      "title": "sea",
+      "text": "Roof party chartreuse hashtag scenester cliche retro butcher hexagon seitan tattooed plaid thundercats. Coloring book tofu whatever photo booth."
+    },
+    {
       "category": "abstraction",
-      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/paint7.jpg",
-      "title": "paint7",
+      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/vpaintVase.jpg",
+      "title": "vpaint Vase",
       "text": "Four loko cray tote bag mixtape, twee tousled aesthetic viral cronut. Mumblecore affogato twee trust fund whatever."
     },
     {
       "category": "paysage",
-      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/vpaint8.jpg",
-      "title": "vpaint8",
+      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/vpaintWinter.jpg",
+      "title": "vpaint Winter",
       "text": "Roof party chartreuse hashtag scenester cliche retro butcher hexagon seitan tattooed plaid thundercats. Coloring book tofu whatever photo booth."
     },
     {
       "category": "abstraction",
-      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/vpaint9.jpg",
-      "title": "vpaint9",
+      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/orchids.jpg",
+      "title": "orchids",
       "text": "Roof party chartreuse hashtag scenester cliche retro butcher hexagon seitan tattooed plaid thundercats. Coloring book tofu whatever photo booth."
     },
     {
       "category": "portrait",
-      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/paint10.jpg",
-      "title": "paint10",
+      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/pears.jpg",
+      "title": "pears",
+      "text": "I'm baby 8-bit raclette migas, normcore slow-carb gentrify lo-fi waistcoat single-origin coffee tumeric poutine coloring book"
+    },
+
+    {
+      "category": "abstraction",
+      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/reeds.jpg",
+      "title": "reeds",
       "text": "I'm baby 8-bit raclette migas, normcore slow-carb gentrify lo-fi waistcoat single-origin coffee tumeric poutine coloring book"
     },
     {
       "category": "paysage",
-      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/paint11.jpg",
-      "title": "paint11",
+      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/peony.jpg",
+      "title": "peony",
       "text": "I'm baby 8-bit raclette migas, normcore slow-carb gentrify lo-fi waistcoat single-origin coffee tumeric poutine coloring book"
-    },
-    {
-      "category": "abstraction",
-      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/paint12.jpg",
-      "title": "paint12",
-      "text": "I'm baby 8-bit raclette migas, normcore slow-carb gentrify lo-fi waistcoat single-origin coffee tumeric poutine coloring book"
-    },
-    {
-      "category": "portrait",
-      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/vpaint13.jpg",
-      "title": "vpaint13",
-      "text": "Roof party chartreuse hashtag scenester cliche retro butcher hexagon seitan tattooed plaid thundercats. Coloring book tofu whatever photo booth."
-    },
-    {
-      "category": "abstraction",
-      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/vpaint14.jpg",
-      "title": "vpaint14",
-      "text": "Roof party chartreuse hashtag scenester cliche retro butcher hexagon seitan tattooed plaid thundercats. Coloring book tofu whatever photo booth."
-    },
-    {
-      "category": "paysage", 
-      "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/paint15.jpg",
-      "title": "paint15",
-      "text": "Tofu pok pok plaid hexagon, snackwave forage poke tacos. Bushwick roof party kombucha everyday carry, retro deep v YOLO hoodie"
     }
   ]
 }

@@ -82,7 +82,7 @@
     left: 0;
     background-color: #fff;
     overflow: hidden;
-    transition: 1.5s ease-in-out;
+    transition: 1s ease-in-out;
   }
   .navbar_links.active{
     width: 50%;
