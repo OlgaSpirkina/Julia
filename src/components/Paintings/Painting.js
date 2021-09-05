@@ -4,14 +4,14 @@ import styles from './Paintings.module.css'
 const Painting = ({ paint: { image, title} }) => {
   const verticalImg = title.includes('vpaint');
   return(
-    <div className={styles.paint_container}>
+    <figure className={styles.paint_container}>
+      <figcaption className={styles.figcaption}>{title}</figcaption>
       <img
         src={image}
         alt={title}
         className={(verticalImg === true) ? `${styles.vertical}` : `${styles.horizontal}` }
       />
-      <p>{title}</p>
-    </div>
+    </figure>
   )
 }
 

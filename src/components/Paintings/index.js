@@ -35,12 +35,9 @@ const Paintings = ({ paintings }) => {
           )
         })}
         {screenWidth <= 649 && (
-          <ArrowUp onClick={executeScroll}/>
+          <ArrowUp onClick={executeScroll} />
         )}
       </section>
-      <div>
-
-      </div>
     </Fragment>
   )
 }
@@ -50,8 +47,3 @@ Paintings.propTypes = {
 }
 
 export default Paintings
-/*
-{screenWidth <= 649 && (
-  <ArrowUp href="#" />
-)}
-*/

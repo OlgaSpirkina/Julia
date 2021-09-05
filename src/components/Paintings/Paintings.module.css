@@ -4,20 +4,22 @@
   justify-content: space-between;
 }
 .paint_container{
-  height: 17rem;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 1rem;
   border: 1px solid var(--mainGray);
 }
+.figcaption{
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  padding: .1rem;
+}
 .paint_container img{
   /* border-top-left-radius: .5rem;
   border-top-right-radius: .5rem; */
-}
-.paint_container p{
-  margin: 0;
-  padding: 0;
 }
 .vertical{
   width: 10rem;
@@ -38,9 +40,6 @@
   }
   .section{
     padding-top: 0;
-  }
-  .paint_container{
-    height: 11rem;
   }
   .vertical{
     width: 7rem;
