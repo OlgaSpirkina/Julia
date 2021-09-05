@@ -8,7 +8,7 @@
   width: 75%;
   margin: auto;
   margin-top: 5rem;
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 .gallery_container{
   width: 90%;
@@ -16,17 +16,19 @@
   margin: 2rem 0;
   cursor: pointer;
   font-size: 1.1rem;
-  color: #fff;
+  color: var(--primaryOrange);
   text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .gallery_container:first-of-type{
-  background-image: url('https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/flower.jpg');
+  background-image: url('../../assets/flower.jpg');
 }
 .gallery_container:nth-of-type(2){
-  background-image: url('https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/landscape.jpg');
+  background-image: url('../../assets/landscape.jpg');
 }
 .gallery_container:nth-of-type(3){
-  background-image: url('https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/stilllife.jpg');
+  background-image: url('../../assets/stilllife.jpg');
 }
 .for_paintings{
   width: 100%;
