@@ -1,86 +1,86 @@
 {
   "paintings": [
     {
-      "category": "paysage",
+      "category": "flower",
       "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/redPeony.jpg",
       "title": "red peony",
       "text": "I'm baby 8-bit raclette migas, normcore slow-carb gentrify lo-fi waistcoat single-origin coffee tumeric poutine coloring book"
     },
     {
-      "category": "portrait",
+      "category": "flower",
       "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/chamomile.jpg",
       "title": "chamomile",
       "text": "Tofu pok pok plaid hexagon, snackwave forage poke tacos. Bushwick roof party kombucha everyday carry, retro deep v YOLO hoodie"
     },
     {
-      "category": "paysage",
+      "category": "still life",
       "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/pumpkins.jpg",
       "title": "pumpkins",
       "text": "I'm baby 8-bit raclette migas, normcore slow-carb gentrify lo-fi waistcoat single-origin coffee tumeric poutine coloring book"
     },
     {
-      "category": "paysage",
+      "category": "landscape  & others",
       "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/arc.jpg",
       "title": "arc",
       "text": "Tousled meditation godard williamsburg, austin umami forage try-hard hella bicycle rights tattooed chicharrones irony."
     },
     {
-      "category": "abstraction",
+      "category": "landscape  & others",
       "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/horse.jpg",
       "title": "horse",
       "text": " Four loko cray tote bag mixtape, twee tousled aesthetic viral cronut. Mumblecore affogato twee trust fund whatever."
     },
     {
-      "category": "portrait",
+      "category": "landscape  & others",
       "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/courtyard.jpg",
       "title": "courtyard",
       "text": "Four loko cray tote bag mixtape, twee tousled aesthetic viral cronut. Mumblecore affogato twee trust fund whatever."
     },
     {
-      "category": "portrait",
+      "category": "still life",
       "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/grapes.jpg",
       "title": "grapes",
       "text": "Four loko cray tote bag mixtape, twee tousled aesthetic viral cronut. Mumblecore affogato twee trust fund whatever."
     },
     {
-      "category": "portrait",
+      "category": "landscape  & others",
       "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/sea.jpg",
       "title": "sea",
       "text": "Roof party chartreuse hashtag scenester cliche retro butcher hexagon seitan tattooed plaid thundercats. Coloring book tofu whatever photo booth."
     },
     {
-      "category": "abstraction",
+      "category": "still life",
       "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/vase.jpg",
       "title": "vase",
       "text": "Four loko cray tote bag mixtape, twee tousled aesthetic viral cronut. Mumblecore affogato twee trust fund whatever."
     },
     {
-      "category": "paysage",
+      "category": "landscape  & others",
       "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/winter.jpg",
       "title": "winter",
       "text": "Roof party chartreuse hashtag scenester cliche retro butcher hexagon seitan tattooed plaid thundercats. Coloring book tofu whatever photo booth."
     },
     {
-      "category": "abstraction",
+      "category": "flower",
       "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/orchids.jpg",
       "title": "orchids",
       "text": "Roof party chartreuse hashtag scenester cliche retro butcher hexagon seitan tattooed plaid thundercats. Coloring book tofu whatever photo booth."
     },
     {
-      "category": "portrait",
+      "category": "still life",
       "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/pears.jpg",
       "title": "pears",
       "text": "I'm baby 8-bit raclette migas, normcore slow-carb gentrify lo-fi waistcoat single-origin coffee tumeric poutine coloring book"
     },
 
     {
-      "category": "abstraction",
+      "category": "landscape  & others",
       "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/reeds.jpg",
       "title": "reeds",
       "text": "I'm baby 8-bit raclette migas, normcore slow-carb gentrify lo-fi waistcoat single-origin coffee tumeric poutine coloring book"
     },
     {
-      "category": "paysage",
+      "category": "flower",
       "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/peony.jpg",
       "title": "peony",
       "text": "I'm baby 8-bit raclette migas, normcore slow-carb gentrify lo-fi waistcoat single-origin coffee tumeric poutine coloring book"

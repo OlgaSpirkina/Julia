@@ -10,7 +10,7 @@ const Gallery = ({ paintings }) => {
     return(
       <>
       <section className={`${styles.section_gallery} ${styles.section}`}>
-        {allCategories.map((category, i) => {
+        {allCategories.sort().map((category, i) => {
           return(
             <Link
               to={`/details/${category}`}
