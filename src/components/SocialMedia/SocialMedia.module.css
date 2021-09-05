@@ -4,13 +4,19 @@
   margin: 2rem 0;
   z-index: 2;
 }
-.logovk{
+.logovk,
+.fb{
   margin-left: .5rem;
   cursor: pointer;
   color: var(--primaryOrange);
-  /* font-size: .5rem; */
 }
-.logovk:hover{
+.fb{
+  font-size: 1.85rem;
+  margin-top: .1rem;
+  border-radius: .85rem;
+}
+.logovk:hover,
+.fb:hover{
   transform: scale(1.2);
   opacity: .9;
 }

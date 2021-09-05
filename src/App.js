@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Paintings from './components/Paintings'
 import Details from './components/Details'
 import Gallery from './components/Gallery'
+import About from './components/pages/About'
 import './App.css';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
               />
             )}
           />
+          <Route exact path='/about' component={About} />
           <Route exact path='/details/:category' render={props => (
             <Details
               {...props}
