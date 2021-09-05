@@ -26,11 +26,12 @@ const Paintings = ({ paintings }) => {
             <Painting key={index} paint={paint} />
           )
         })}
+        {screenWidth <= 649 && (
+          <ArrowUp href="#" />
+        )}
       </section>
       <div>
-      {screenWidth <= 649 && (
-        <ArrowUp path="/" href="/#" />
-      )}
+
       </div>
     </Fragment>
   )
