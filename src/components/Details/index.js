@@ -7,6 +7,19 @@ import styles from './Details.module.css'
 
 
 const Details = ({ paintings }) =>{
+  /* detect if small screen */
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  useEffect(() => {
+  const changeWidth = () => {
+    setScreenWidth(window.innerWidth);
+  }
+  window.addEventListener('resize', changeWidth)
+  /* delete eventListener if function changeWidth is deleted */
+  return()=>{
+    window.removeEventListener('resize', changeWidth)
+  }
+  },[])
+
 // Start filter by category
   let { category } = useParams();
   let filteredByCategory = [];
@@ -26,6 +39,7 @@ const Details = ({ paintings }) =>{
           justifyContent: 'flex-end'
       }}
       >
+      {screenWidth <= 1000  &&(
         <Link to="/gallery">
           <button
             style={{
@@ -40,6 +54,7 @@ const Details = ({ paintings }) =>{
             Go to Gallery
           </button>
         </Link>
+      )}
       </div>
       {filteredByCategory.map((elem, i) => {
         return(
