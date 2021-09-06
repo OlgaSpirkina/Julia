@@ -5,6 +5,7 @@
 :root{
   --primaryOrange: rgb(249, 86, 2);
   --mainGray: rgb(112, 128, 144);
+  --grayBrown: rgb(64, 58, 58);
   --mainfont: 'Chivo', sans-serif;
 }
 *{

@@ -15,11 +15,15 @@
   height: 15rem;
   margin: 2rem 0;
   cursor: pointer;
-  font-size: 1.1rem;
-  color: var(--primaryOrange);
+  font-size: 1.5rem;
+  padding-top: .5rem;
+  padding-left: .5rem;
+  color: var(--greyBrown);
   text-decoration: none;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-filter: drop-shadow(12px 12px 8px var(--mainGray));
+         filter: drop-shadow(12px 12px 8px  var(--mainGray));
 }
 .gallery_container:first-of-type{
   background-image: url('../../assets/flower.jpg');
@@ -29,6 +33,7 @@
 }
 .gallery_container:nth-of-type(3){
   background-image: url('../../assets/stilllife.jpg');
+  color: #fff;
 }
 .for_paintings{
   width: 100%;

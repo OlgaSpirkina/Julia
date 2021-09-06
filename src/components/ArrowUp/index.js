@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { MdArrowUpward } from 'react-icons/md'
 import styles from './ArrowUp.module.css'
 
