@@ -1,6 +1,18 @@
+import React, { useState } from 'react';
 import styles from './Contact.module.css'
 
 const Contact = () => {
+  // Regex  
+  const [email, setEmail] = useState('');
+  const [emailErr, setEmailErr] = useState(false);
+  const validEmail = new RegExp(
+   '^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$'
+ );
+   const validate = () => {
+        if (!validEmail.test(email)) {
+           setEmailErr(true);
+        }
+      };
   return(
     <section className={`${styles.section} ${styles.get_in_touch}`}>
       <h1>Contact</h1>
@@ -11,7 +23,14 @@ const Contact = () => {
             <label className={styles.label} htmlFor="name">name</label>
           </div>
           <div className={styles.form_field}>
-            <input className={styles.input_text} id="email" type="email" name="email" required="required" />
+            <input
+              onChange={(e) => setEmail(e.target.value)}
+              className={styles.input_text}
+              id="email"
+              type="email"
+              name="email"
+              required="required"
+            />
             <label className={styles.label} htmlFor="email">email</label>
           </div>
           <div className={styles.form_field}>
@@ -27,7 +46,14 @@ const Contact = () => {
             <label className={styles.label} htmlFor="message">your message</label>
           </div>
           <div className={styles.form_field}>
-            <input className={styles.submit_btn} type="submit" value="Send" name="" />
+            <input
+              className={styles.submit_btn}
+              onClick={validate}
+              type="submit"
+              value="Send"
+              name=""
+            />
+            {emailErr && <p style={{ color: 'red' }}>Your email is invalid</p>}
           </div>
         </form>
       </div>

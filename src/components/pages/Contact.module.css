@@ -15,7 +15,7 @@
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 3px;
-  font-size: 3em;
+  font-size: 2em;
   line-height: 48px;
   padding-bottom: 20px;
   color: var(--mainGray);
@@ -36,7 +36,8 @@
 }
 .contact_form .input_text:focus + .label,
 .contact_form .input_text.not-empty + .label{
-  transform: translateY(-24px);
+  transform: translateY(-30px);
+  opacity: 0;
 }
 .contact_form .input_text:focus{
   outline: none;
@@ -67,7 +68,7 @@
   width: 150px;
   cursor: pointer;
 }
-@media only screen and (max-width : 649px) {
+@media only screen and (max-width : 900px) {
   .get_in_touch{
     margin-top: 5rem;
   }
@@ -75,7 +76,7 @@
     font-size: 1.5rem;
   }
 }
-@media only screen and (min-width : 650px) and (max-width : 1400px) {
+@media only screen and (min-width : 901px) and (max-width : 1400px) {
   .section{
     position: relative;
     width: 40%;
