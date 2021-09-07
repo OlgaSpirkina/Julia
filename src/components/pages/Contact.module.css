@@ -1,0 +1,92 @@
+.section{
+  width: 75%;
+  margin: auto;
+  margin-top: 5rem;
+  padding-top: 5rem;
+}
+.get_in_touch{
+  max-width: 800px;
+  margin-top: 10rem;
+  position: relative;
+  box-shadow: 0 10px 30px 0px rgba(0,0,0,.1);
+  padding: 30px;
+}
+.get_in_touch h1{
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 3em;
+  line-height: 48px;
+  padding-bottom: 20px;
+  color: var(--mainGray);
+}
+.contact_form .form_field{
+  position: relative;
+  margin: 32px 0;
+}
+.contact_form .input_text{
+  display: block;
+  width: 100%;
+  height: 2rem;
+  border-width: 0 0 2px 0;
+  border-color: var(--mainGray);
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.contact_form .input_text:focus + .label,
+.contact_form .input_text.not-empty + .label{
+  transform: translateY(-24px);
+}
+.contact_form .input_text:focus{
+  outline: none;
+}
+.contact_form .label{
+  position: absolute;
+  left: 20px;
+  bottom: 1rem;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--mainGray);
+  cursor: text;
+  text-transform: capitalize;
+  transition: transform .2s ease-in-out;
+}
+.contact_form .submit_btn{
+  display: inline-block;
+  color: #fff;
+  background-color: var(--primaryOrange);
+  text-transform: full-width;
+  letter-spacing: .1rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: .5rem;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  cursor: pointer;
+}
+@media only screen and (max-width : 649px) {
+  .get_in_touch{
+    margin-top: 5rem;
+  }
+  .get_in_touch h1{
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width : 650px) and (max-width : 1400px) {
+  .section{
+    position: relative;
+    width: 40%;
+    float: right;
+    margin-right: 15rem;
+  }
+  .get_in_touch{
+    margin-top: 0;
+    margin-top: 5rem;
+  }
+  .get_in_touch h1{
+    font-size: 1.5rem;
+  }
+}

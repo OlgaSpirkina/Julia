@@ -5,6 +5,7 @@ import Paintings from './components/Paintings'
 import Details from './components/Details'
 import Gallery from './components/Gallery'
 import About from './components/pages/About'
+import Contact from './components/pages/Contact'
 import ArrowUp from './components/ArrowUp'
 import './App.css';
 
@@ -64,6 +65,7 @@ function App() {
               paintings={paintings}
             />
           )} />
+          <Route exact path='/contact' component={Contact} />
         </Switch>
         {screenWidth <= 1200  &&(
           <ArrowUp onClick={executeScroll} />

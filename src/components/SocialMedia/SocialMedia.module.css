@@ -5,7 +5,8 @@
   z-index: 2;
 }
 .logovk,
-.fb{
+.fb,
+.ig{
   margin-left: .5rem;
   cursor: pointer;
   color: var(--primaryOrange);
@@ -15,8 +16,12 @@
   margin-top: .25rem;
   border-radius: .2rem;
 }
+.ig{
+  font-size: 2.15rem;
+}
 .logovk:hover,
-.fb:hover{
+.fb:hover,
+.ig:hover{
   transform: scale(1.2);
   opacity: .9;
 }
