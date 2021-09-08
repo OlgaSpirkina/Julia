@@ -45,6 +45,11 @@
 .turn_around{
   transform: rotate(180deg);
 }
+.transparent{
+  background-color: transparent;
+  border: none;
+}
+
 /* start zoom style */
 .zoom_container{
 

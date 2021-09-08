@@ -19,12 +19,15 @@ const Carousel = ({ details, mainAlt, mainImg }) => {
       />
       <div className=
       {
-        detailImg
-          ?
-        `${styles.active} ${styles.slideshow_container}`
-          :
-        `${styles.slideshow_container}`
-      }>
+      (details == []) ? `${styles.transparent}` : 
+      (detailImg
+        ?
+      `${styles.active} ${styles.slideshow_container}`
+        :
+      `${styles.slideshow_container}`)
+      }
+
+      >
         {detailImg
           ?
           <Fragment>
