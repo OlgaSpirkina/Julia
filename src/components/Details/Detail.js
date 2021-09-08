@@ -7,7 +7,7 @@ const Detail = ({ text }) => {
   const [toggle, setToggle] = useState(false);
 
   return(
-    <div>
+    <div className={styles.text_description}>
       <p
         onClick={()=>setToggle(!toggle)}
       >

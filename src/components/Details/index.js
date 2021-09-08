@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import { useParams } from 'react-router'
 import Detail from './Detail'
+import Carousel from './Carousel'
 import styles from './Details.module.css'
 
 
@@ -56,10 +57,13 @@ const Details = ({ paintings }) =>{
         </Link>
       )}
       </div>
+      <p style={{ textAlign: 'justify', margin: '1rem' }}>
+        Double click on the image to see more details. Once the details are displayed, click and hover over to zoom.
+      </p>
       {filteredByCategory.map((elem, i) => {
         return(
           <div key={i} className={styles.detail_text_img}>
-            <img src={elem.image} alt={elem.title} />
+            <Carousel mainImg={elem.image} mainAlt={elem.title} details={elem.details} />
             <Detail text={elem.text} />
           </div>
         )
