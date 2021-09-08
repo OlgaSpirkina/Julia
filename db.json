@@ -47,7 +47,7 @@
       "image": "https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/grapes.jpg",
       "title": "grapes",
       "text": "Four loko cray tote bag mixtape, twee tousled aesthetic viral cronut. Mumblecore affogato twee trust fund whatever.",
-      "details": []
+      "details": ["https://raw.githubusercontent.com/OlgaSpirkina/Julia/main/src/assets/grapes-details-1.jpg"]
     },
     {
       "category": "landscapes  & others",
