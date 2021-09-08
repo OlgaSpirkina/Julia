@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 import styles from './Contact.module.css'
 
 const Contact = () => {
-  // Regex  
+  // Regex
   const [email, setEmail] = useState('');
   const [emailErr, setEmailErr] = useState(false);
   const validEmail = new RegExp(
    '^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$'
  );
    const validate = () => {
-        if (!validEmail.test(email)) {
-           setEmailErr(true);
-        }
-      };
+    if (!validEmail.test(email)) {
+       setEmailErr(true);
+     }
+    };
   return(
     <section className={`${styles.section} ${styles.get_in_touch}`}>
       <h1>Contact</h1>
