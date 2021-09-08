@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Julia/static/css/main.2ddfed47.chunk.css",
+    "main.css": "/Julia/static/css/main.30773ac9.chunk.css",
     "main.js": "/Julia/static/js/main.22f5324e.chunk.js",
     "main.js.map": "/Julia/static/js/main.22f5324e.chunk.js.map",
     "runtime-main.js": "/Julia/static/js/runtime-main.b2b35bdc.js",
@@ -12,7 +12,7 @@
     "static/js/3.b73de8b6.chunk.js.map": "/Julia/static/js/3.b73de8b6.chunk.js.map",
     "index.html": "/Julia/index.html",
     "static/css/2.112df019.chunk.css.map": "/Julia/static/css/2.112df019.chunk.css.map",
-    "static/css/main.2ddfed47.chunk.css.map": "/Julia/static/css/main.2ddfed47.chunk.css.map",
+    "static/css/main.30773ac9.chunk.css.map": "/Julia/static/css/main.30773ac9.chunk.css.map",
     "static/js/2.c1f4a8fa.chunk.js.LICENSE.txt": "/Julia/static/js/2.c1f4a8fa.chunk.js.LICENSE.txt",
     "static/media/index.css": "/Julia/static/media/Chivo-Regular.741cf223.ttf",
     "static/media/bio.751ff2eb.jpg": "/Julia/static/media/bio.751ff2eb.jpg",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.b2b35bdc.js",
     "static/css/2.112df019.chunk.css",
     "static/js/2.c1f4a8fa.chunk.js",
-    "static/css/main.2ddfed47.chunk.css",
+    "static/css/main.30773ac9.chunk.css",
     "static/js/main.22f5324e.chunk.js"
   ]
 }
