@@ -5,10 +5,12 @@
   padding-top: 5rem;
 }
 .get_in_touch{
-  max-width: 800px;
-  margin-top: 10rem;
-  position: relative;
+  max-width: 700px;
+  width: 70%;
+  margin: auto;
   box-shadow: 0 10px 30px 0px rgba(0,0,0,.1);
+  margin-top: 5rem;
+  padding-top: 5rem;
   padding: 30px;
 }
 .get_in_touch h1{
@@ -69,23 +71,13 @@
   cursor: pointer;
 }
 @media only screen and (max-width : 900px) {
-  .get_in_touch{
-    margin-top: 5rem;
-  }
   .get_in_touch h1{
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width : 901px) and (max-width : 1400px) {
   .section{
-    position: relative;
     width: 40%;
-    float: right;
-    margin-right: 15rem;
-  }
-  .get_in_touch{
-    margin-top: 0;
-    margin-top: 5rem;
   }
   .get_in_touch h1{
     font-size: 1.5rem;
