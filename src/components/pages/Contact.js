@@ -1,15 +1,47 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
+import Input from './Input'
 import styles from './Contact.module.css'
+
+const contactForm = [
+  {
+    "id": "name",
+    "type": "text",
+    "name": "name",
+    "text": "name"
+  },
+  {
+    "id": "email",
+    "type": "email",
+    "name": "email",
+    "text": "email"
+  },
+  {
+    "id": "company",
+    "type": "text",
+    "name": "company",
+    "text": "company name"
+  },
+  {
+    "id": "phone",
+    "type": "text",
+    "name": "phone",
+    "text": "phone number"
+  },
+  {
+    "id": "message",
+    "type": "text",
+    "name": "message",
+    "text": "your message"
+  }
+]
 
 const Contact = () => {
   // Regex
   const [email, setEmail] = useState('');
   const [emailErr, setEmailErr] = useState(false);
-  const [labelForName, setLabelForName] = useState('');
+ // Special case for email to combine regex and setLabel state that is defined in Input component for others inputs
   const [labelForEmail, setLabelForEmail] = useState('');
-  const [labelForCompany, setLabelForCompany] = useState('');
-  const [labelForPhone, setLabelForPhone] = useState('');
-  const [labelForMessage, setLabelForMessage] = useState('');
+
   const validEmail = new RegExp(
    '^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$'
  );
@@ -18,99 +50,47 @@ const Contact = () => {
        setEmailErr(true);
      }
     };
+  const onChangeEmail = (e) => {
+    setEmail(e.target.value);
+    setLabelForEmail(e.target.value)
+  }
   return(
     <section className={`${styles.section} ${styles.get_in_touch}`}>
       <h1>Contact</h1>
       <div>
         <form className={styles.contact_form} action="https://formspree.io/f/xwkaewbb" method="POST">
-          <div className={styles.form_field}>
-            <input
-              onChange={(e) => setLabelForName(e.target.value)}
-              className={styles.input_text}
-              id="name"
-              type="text"
-              name="name"
-              required="required" />
-            <label
-              className={styles.label}
-              htmlFor="name"
-            >
-              {labelForName ? '' : 'name'}
-            </label>
-          </div>
-          <div className={styles.form_field}>
-            <input
-              onChange={(e) => setEmail(e.target.value)}
-              onChange={(e) => setLabelForEmail(e.target.value)}
-              className={styles.input_text}
-              id="email"
-              type="email"
-              name="email"
-              required="required"
-            />
-            <label
-              className={styles.label}
-              htmlFor="email"
-            >
-              {labelForEmail ? '' : 'email'}
-            </label>
-          </div>
-          <div className={styles.form_field}>
-            <input
-              onChange={(e) => setLabelForCompany(e.target.value)}
-              className={styles.input_text}
-              id="company"
-              type="text"
-              name="company"
-            />
-            <label
-              className={styles.label}
-              htmlFor="company"
-            >
-              {labelForCompany ? '' : 'company name'}
-            </label>
-          </div>
-          <div className={styles.form_field}>
-            <input
-              onChange={(e) => setLabelForPhone(e.target.value)}
-              className={styles.input_text}
-              id="phone"
-              type="text"
-              name="phone"
-            />
-            <label
-              className={styles.label}
-              htmlFor="phone"
-            >
-              {labelForPhone ? '' : 'phone number'}
-            </label>
-          </div>
-          <div className={styles.form_field}>
-            <input
-              onChange={(e) => setLabelForMessage(e.target.value)}
-              className={styles.input_text}
-              id="message"
-              type="text"
-              name="message"
-              required="required"
-            />
-            <label
-              className={styles.label}
-              htmlFor="message"
-            >
-              {labelForMessage ? '' : 'your message'}
-            </label>
-          </div>
-          <div className={styles.form_field}>
-            <input
-              className={styles.submit_btn}
-              onClick={validate}
-              type="submit"
-              value="Send"
-              name=""
-            />
-            {emailErr && <p style={{ color: 'red' }}>Your email is invalid</p>}
-          </div>
+          {contactForm.map((elem, index) => {
+            if(elem.id === 'email'){
+              return(
+                <div className={styles.form_field}>
+                <input
+                  onChange={(e) => onChangeEmail(e)}
+                  className={styles.input_text}
+                  id={elem.id}
+                  type={elem.type}
+                  name={elem.name}
+                  required="required"
+                />
+                <label
+                  className={styles.label}
+                  htmlFor={elem.id}
+                >
+                  {labelForEmail ? '' : elem.text}
+                </label>
+                </div>
+              )
+            }
+            return(
+            <div key={index} className={styles.form_field}>
+              <Input
+                id={elem.id}
+                type={elem.type}
+                name={elem.name}
+                text={elem.text}
+              />
+            </div>
+            )
+          })}
         </form>
       </div>
     </section>
