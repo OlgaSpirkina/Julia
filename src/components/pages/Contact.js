@@ -39,7 +39,9 @@ const Contact = () => {
   // Regex
   const [email, setEmail] = useState('');
   const [emailErr, setEmailErr] = useState(false);
- // Special case for email to combine regex and setLabel state that is defined in Input component for others inputs
+/*
+a special case for email: onChange there are two states to check: label and regex
+*/
   const [labelForEmail, setLabelForEmail] = useState('');
 
   const validEmail = new RegExp(
@@ -63,20 +65,20 @@ const Contact = () => {
             if(elem.id === 'email'){
               return(
                 <div className={styles.form_field}>
-                <input
-                  onChange={(e) => onChangeEmail(e)}
-                  className={styles.input_text}
-                  id={elem.id}
-                  type={elem.type}
-                  name={elem.name}
-                  required="required"
-                />
-                <label
-                  className={styles.label}
-                  htmlFor={elem.id}
-                >
-                  {labelForEmail ? '' : elem.text}
-                </label>
+                  <input
+                    onChange={(e) => onChangeEmail(e)}
+                    className={styles.input_text}
+                    id={elem.id}
+                    type={elem.type}
+                    name={elem.name}
+                    required="required"
+                  />
+                  <label
+                    className={styles.label}
+                    htmlFor={elem.id}
+                  >
+                    {labelForEmail ? '' : elem.text}
+                  </label>
                 </div>
               )
             }
@@ -91,6 +93,16 @@ const Contact = () => {
             </div>
             )
           })}
+          <div className={styles.form_field}>
+            <input
+              className={styles.submit_btn}
+              onClick={validate}
+              type="submit"
+              value="Send"
+              name=""
+            />
+          {emailErr && <p style={{ color: 'red' }}>Your email is invalid</p>}
+          </div>
         </form>
       </div>
     </section>
