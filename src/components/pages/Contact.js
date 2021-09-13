@@ -23,7 +23,7 @@ const contactForm = [
   },
   {
     "id": "phone",
-    "type": "text",
+    "type": "number",
     "name": "phone",
     "text": "phone number"
   },
@@ -36,22 +36,21 @@ const contactForm = [
 ]
 
 const Contact = () => {
-  // Regex
+  // Regex for email
   const [email, setEmail] = useState('');
   const [emailErr, setEmailErr] = useState(false);
 /*
 a special case for email: onChange there are two states to check: label and regex
 */
   const [labelForEmail, setLabelForEmail] = useState('');
-
   const validEmail = new RegExp(
    '^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$'
  );
-   const validate = () => {
-    if (!validEmail.test(email)) {
-       setEmailErr(true);
+  const validate = () => {
+    if(!validEmail.test(email)){
+      setEmailErr(true);
      }
-    };
+  };
   const onChangeEmail = (e) => {
     setEmail(e.target.value);
     setLabelForEmail(e.target.value)
@@ -60,11 +59,11 @@ a special case for email: onChange there are two states to check: label and rege
     <section className={`${styles.section} ${styles.get_in_touch}`}>
       <h1>Contact</h1>
       <div>
-        <form className={styles.contact_form} action="https://formspree.io/f/xwkaewbb" method="POST">
+        <form className={styles.contact_form} action="https://formspree.io/f/xoqyrajj" method="POST">
           {contactForm.map((elem, index) => {
             if(elem.id === 'email'){
               return(
-                <div className={styles.form_field}>
+                <div className={styles.form_field} key={index}>
                   <input
                     onChange={(e) => onChangeEmail(e)}
                     className={styles.input_text}
